@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+    <link rel="stylesheet" href="To-Do-List.css" />
+    <title>Javascript Todo-list App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="screen-backdrop"></div>
+      <div class="home-screen screen">
+        <div class="head-wrapper">
+          <div class="menu-btn">
+          
+          </div>
+          <div class="welcome">
+            <div class="content">
+              <h1>Hello i am to do list</h1>
+              
+            </div>
+           
+          </div>
+        </div>
+        <div class="categories-wrapper">
+          <div class="categories">
+            <div class="category">
+              <div class="left">
+                <i class="fas fa-sun"></i>
+                <div class="content">
+                  <h1>Personal</h1>
+                  <p>5 Tasks</p>
+                </div>
+              </div>
+              <div class="options">
+                <div class="toggle-btn">
+                  <i class="fas fa-ellipsis-v"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="category-screen screen">
+        <div class="head-wrapper">
+          <div class="back-btn">
+            <i class="fas fa-arrow-left"></i>
+          </div>
+          <div class="options">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <div class="category-details">
+          <img src="download.jpeg" alt="" id="category-img" />
+          <div class="details">
+            <p id="num-tasks">8 tasks</p>
+            <h1 id="category-title">Personal</h1>
+          </div>
+        </div>
+        <div class="tasks-wrapper">
+          <div class="tasks">
+            <div class="task-wrapper">
+              <label for="task" class="task">
+                <input type="checkbox" name="task" id="task" />
+                <span class="checkmark"></span>
+               
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="add-task-btn">
+        <i class="fas fa-plus"></i>
+      </div>
+      <div class="black-backdrop"></div>
+      <div class="add-task">
+        <div class="add-task-backdrop"></div>
+        <h1 class="heading">Add Task</h1>
+        <div class="input-group">
+          <label for="task-input"> Task </label>
+          <input type="text" id="task-input" required />
+        </div>
+        <div class="input-group">
+          <label for="category-select"> Category </label>
+          <select id="category-select"></select>
+        </div>
+        <div class="btns">
+          <button class="cancel-btn"><i class="fas fa-times"></i> Cancel</button>
+          <button class="add-btn"><i class="fas fa-check"></i> Add</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="To-Do-List.js"></script>
+  </body>
+</html>
